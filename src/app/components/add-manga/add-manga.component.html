@@ -1,0 +1,13 @@
+<h2>Adicionar Novo Mangá</h2>
+<form (ngSubmit)="addManga()">
+  <label for="name">Nome:</label>
+  <input type="text" id="name" [(ngModel)]="manga.name" name="name" required><br><br>
+
+  <label for="url">URL:</label>
+  <input type="url" id="url" [(ngModel)]="manga.url" name="url" required><br><br>
+
+  <label for="selector">Seletor:</label>
+  <input type="text" id="selector" [(ngModel)]="manga.selector" name="selector" required><br><br>
+
+  <button type="submit">Adicionar Mangá</button>
+</form>

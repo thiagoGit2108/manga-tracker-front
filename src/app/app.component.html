@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Painel de Controle de Mangás</h1>
+
+  <hr>
+
+  <app-add-manga (mangaAdded)="mangaList.getMangaList()"></app-add-manga>
+
+  <hr>
+
+  <app-manga-list #mangaList></app-manga-list>
+</div>

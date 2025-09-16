@@ -1,18 +1,31 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Gitignore padrão do Angular
 
-# Other files and folders
-.settings/
+### Node
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Módulos de dependências
+node_modules/
+dist/
+.env
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Angular cache
+.angular/cache/
+
+# MacOS
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+
+# Build artifacts
+/dist
+/coverage
+/e2e/

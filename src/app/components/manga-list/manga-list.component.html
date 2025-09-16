@@ -1,0 +1,15 @@
+<h2>Minha Lista de Mangás</h2>
+<div *ngIf="mangas && mangas.length > 0; else noMangas">
+  <div class="manga-item" *ngFor="let manga of mangas">
+    <h3>{{ manga.name }}</h3>
+    <p><strong>ID:</strong> {{ manga.id }}</p>
+    <p><strong>URL:</strong> {{ manga.url }}</p>
+    <p><strong>Seletor:</strong> {{ manga.selector }}</p>
+    <p><strong>Último Capítulo:</strong> {{ manga.last_chapter }}</p>
+    <button (click)="trackManga(manga.id)">Rastrear Agora</button>
+    <button (click)="deleteManga(manga.id)">Excluir</button>
+  </div>
+</div>
+<ng-template #noMangas>
+  <p>Nenhum mangá cadastrado.</p>
+</ng-template>
